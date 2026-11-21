@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Attendance Tracker</h1>
+        <p>Manage student attendance easily</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Add Student</h2>
+
+        <input type="text" id="roll" placeholder="Enter Roll Number">
+        <input type="text" id="name" placeholder="Enter Student Name">
+
+        <button onclick="addStudent()">Add Student</button>
+
+        <h2>Student Attendance</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Attendance</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody id="studentList"></tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
